@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados de Encuesta</title>
+</head>
+<body>
+    <h1>Resultados de la encuesta escolar</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Opinión</th>
+        </tr>
+        {% for fila in resultados %}
+        <tr>
+            <td>{{ fila[0] }}</td>
+            <td>{{ fila[1] }}</td>
+            <td>{{ fila[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>"
+</body>
+</html>
